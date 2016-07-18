@@ -1,8 +1,11 @@
 #给Eclipse 中的项目增加“扫描二维码”功能
 
->点击上方**绿色按钮**，选择**Downloa ZIP**，下载本目录到你的电脑。
+>点击上方**绿色按钮**，选择**Downloa ZIP**，下载本项目到你的电脑。
 >
-![点击绿色按钮下载](https://github.com/mixinan/1603/blob/master/download.png)
+>![点击绿色按钮下载](https://github.com/mixinan/1603/blob/master/download.png)
+>
+>首先**强调**一点：任何你想加到项目里的新技术或功能，在添加之前，你应该先创建一个测试项目，把它用一遍，确保能用，会用了，再添加到你的项目中。而不是随随便便就往项目里加，造成一堆问题，不知道怎么办。**切记**，先测试。
+
 
 ##一、导入资源
 
@@ -61,6 +64,6 @@
 
 ![扫描测试](https://github.com/mixinan/1603/blob/master/QRcodeTest.png)
 
-二维码生成（也很简单），可参考`慕课网`视频教程：**[扫一扫](http://www.imooc.com/learn/648)**
+把文字转为二维码（也很简单），可参考`慕课网`视频教程：**[扫一扫](http://www.imooc.com/learn/648)**
 
 本文所发的 zxing 源码，移植自该视频讲师所发的适用于 studio 项目的源码。感谢。
