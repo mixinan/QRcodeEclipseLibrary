@@ -1,6 +1,8 @@
 #给Eclipse 中的项目增加“扫描二维码”功能
 
 >点击上方**绿色按钮**，选择**Downloa ZIP**，下载本目录到你的电脑。
+>
+![图片](https://github.com/mixinan/1603/blob/master/download.png)
 
 ##一、导入资源
 
@@ -10,7 +12,8 @@
 3. 把三张图片放在 drawable-hdpi 目录下
 4. 把 activity_capture.xml 文件放在 res/layout 目录下
 5. 把 raw 文件夹放在 res 目录下
-6. 把 zxing 文件夹放在 src 目录下，更改报错的导包语句
+6. 把 zxing 文件夹放在 src 目录下
+7. 打开报错的类文件，Ctrl + Shift + O 替换R为你项目的R
 
 
 
@@ -54,8 +57,10 @@
 
 
 ---
-以上可以解析二维码图片。
+以上可以完成解析二维码图片的功能。
 
-二维码生成（也很简单）及其它，可参考`慕课网`视频教程：[扫一扫](http://www.imooc.com/learn/648)
+![扫描测试](https://github.com/mixinan/1603/blob/master/QRcodeTest.png)
+
+二维码生成（也很简单）及其它，可参考`慕课网`视频教程：**[扫一扫](http://www.imooc.com/learn/648)**
 
 本文所发的 zxing 源码，移植自该视频讲师所发的适用于 studio 项目的源码。感谢。
