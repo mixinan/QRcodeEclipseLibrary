@@ -24,9 +24,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import cc.guoxingnan.qrcode.R;
 
 import com.google.zxing.Result;
-import com.tedu.android_day0717_code.R;
 
 /**
  * This class handles all the messaging which comprises the state machine for

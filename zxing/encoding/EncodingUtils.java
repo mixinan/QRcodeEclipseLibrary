@@ -19,13 +19,13 @@ import java.util.Map;
 public class EncodingUtils {
 
     /**
-     * 创建二维�?
+     * 创建二维�?
      *
      * @param content   content
      * @param widthPix  widthPix
      * @param heightPix heightPix
      * @param logoBm    logoBm
-     * @return 二维�?
+     * @return 二维�?
      */
     public static Bitmap createQRCode(String content, int widthPix, int heightPix, Bitmap logoBm) {
         try {
@@ -33,7 +33,7 @@ public class EncodingUtils {
                 return null;
             }
             // 配置参数
-            Map<EncodeHintType, Object> hints = new HashMap<>();
+            Map<EncodeHintType, Object> hints = new HashMap<EncodeHintType, Object>();
             hints.put(EncodeHintType.CHARACTER_SET, "utf-8");
             // 容错级别
             hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
@@ -41,7 +41,7 @@ public class EncodingUtils {
             BitMatrix bitMatrix = new QRCodeWriter().encode(content, BarcodeFormat.QR_CODE, widthPix,
                     heightPix, hints);
             int[] pixels = new int[widthPix * heightPix];
-            // 下面这里按照二维码的算法，�?�个生成二维码的图片�?
+            // 下面这里按照二维码的算法，�?�个生成二维码的图片�?
             // 两个for循环是图片横列扫描的结果
             for (int y = 0; y < heightPix; y++) {
                 for (int x = 0; x < widthPix; x++) {
@@ -58,7 +58,7 @@ public class EncodingUtils {
             if (logoBm != null) {
                 bitmap = addLogo(bitmap, logoBm);
             }
-            //必须使用compress方法将bitmap保存到文件中再进行读取�?�直接返回的bitmap是没有任何压缩的，内存消耗巨大！
+            //必须使用compress方法将bitmap保存到文件中再进行读取�?�直接返回的bitmap是没有任何压缩的，内存消耗巨大！
             return bitmap;
         } catch (WriterException e) {
             e.printStackTrace();
@@ -76,7 +76,7 @@ public class EncodingUtils {
         if (logo == null) {
             return src;
         }
-        //获取图片的宽�?
+        //获取图片的宽�?
         int srcWidth = src.getWidth();
         int srcHeight = src.getHeight();
         int logoWidth = logo.getWidth();
@@ -87,7 +87,7 @@ public class EncodingUtils {
         if (logoWidth == 0 || logoHeight == 0) {
             return src;
         }
-        //logo大小为二维码整体大小�?1/5
+        //logo大小为二维码整体大小�?1/5
         float scaleFactor = srcWidth * 1.0f / 5 / logoWidth;
         Bitmap bitmap = Bitmap.createBitmap(srcWidth, srcHeight, Bitmap.Config.ARGB_8888);
         try {

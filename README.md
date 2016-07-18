@@ -2,7 +2,7 @@
 
 >点击上方**绿色按钮**，选择**Downloa ZIP**，下载本目录到你的电脑。
 >
-![图片](https://github.com/mixinan/1603/blob/master/download.png)
+![点击绿色按钮下载](https://github.com/mixinan/1603/blob/master/download.png)
 
 ##一、导入资源
 
@@ -40,7 +40,7 @@
 	Intent intent = new Intent(MainActivity.this, CaptureActivity.class);
 	startActivityForResult(intent, 0);
 
-扫描成功以后，会跳转回来，并带回结果：
+扫描成功以后，会跳转回来，并带回解析结果：
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -57,7 +57,7 @@
 
 
 ---
-以上可以完成解析二维码图片的功能。
+以上可以完成解析二维码图片的功能。可扫描下方图片测试。
 
 ![扫描测试](https://github.com/mixinan/1603/blob/master/QRcodeTest.png)
 

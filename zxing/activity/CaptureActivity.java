@@ -39,9 +39,9 @@ import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import cc.guoxingnan.qrcode.R;
 
 import com.google.zxing.Result;
-import com.tedu.android_day0717_code.R;
 
 /**
  * This activity opens the camera and does the actual scanning on a background

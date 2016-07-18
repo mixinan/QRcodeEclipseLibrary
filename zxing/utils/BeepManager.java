@@ -29,8 +29,7 @@ import android.media.MediaPlayer;
 import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.Log;
-
-import com.tedu.android_day0717_code.R;
+import cc.guoxingnan.qrcode.R;
 
 /**
  * Manages beeps and vibrations for {@link CaptureActivity}.
