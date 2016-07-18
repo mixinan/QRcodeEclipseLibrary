@@ -61,6 +61,6 @@
 
 ![扫描测试](https://github.com/mixinan/1603/blob/master/QRcodeTest.png)
 
-二维码生成（也很简单）及其它，可参考`慕课网`视频教程：**[扫一扫](http://www.imooc.com/learn/648)**
+二维码生成（也很简单），可参考`慕课网`视频教程：**[扫一扫](http://www.imooc.com/learn/648)**
 
 本文所发的 zxing 源码，移植自该视频讲师所发的适用于 studio 项目的源码。感谢。

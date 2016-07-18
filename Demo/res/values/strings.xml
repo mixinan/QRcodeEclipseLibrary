@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QRcodeEclipse</string>
+    <string name="hello_world">浪费时间，就是浪费之后的生命；\n浪费机会，就是浪费之前的时间。</string>
+    <string name="action_settings">Settings</string>
+    <string name="scan">扫描</string>
+
+</resources>
